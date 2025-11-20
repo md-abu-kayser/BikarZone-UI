@@ -9,7 +9,6 @@
     localStorage.setItem(LOCAL_KEY, theme);
   }
 
-  // Initialize
   const saved =
     localStorage.getItem(LOCAL_KEY) ||
     (window.matchMedia &&
@@ -46,7 +45,7 @@
   mobileClose && mobileClose.addEventListener("click", closeDrawer);
   mobileCloseArea && mobileCloseArea.addEventListener("click", closeDrawer);
 
-  // Reveal stagger animation when in viewport
+  // Reveal Stagger Animation
   const revealItems = document.querySelectorAll(".reveal-stagger");
   const io = new IntersectionObserver(
     (entries) => {
