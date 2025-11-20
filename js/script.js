@@ -64,7 +64,6 @@
   );
   revealItems.forEach((i) => io.observe(i));
 
-  // small accessibility: close drawer with escape
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeDrawer();
   });
